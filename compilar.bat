@@ -44,7 +44,7 @@ if %errorlevel% neq 0 (
 )
 
 echo [4/4] Compilando ejecutable...
-py -m PyInstaller --onefile --noconfirm --name leafpress leafpress.py
+py -m PyInstaller --onefile --noconfirm --name leafpress --icon=icono.ico leafpress.py
 if %errorlevel% neq 0 (
     echo [ERROR] Fallo al compilar
     pause
